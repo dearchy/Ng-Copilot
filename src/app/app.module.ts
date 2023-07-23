@@ -5,8 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
+import { SharedModule } from './mat.moudle';
 // import mat slide toogle module
-import { MatSlideToggleModule } from '@angular/material/slide-toggle'; // Copilot spelling issue
+// import { MatSlideToggleModule } from '@angular/material/slide-toggle'; // Copilot spelling issue
+
 
 @NgModule({
   declarations: [
@@ -16,7 +18,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle'; // Copilo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatSlideToggleModule,
+    SharedModule,
     BrowserAnimationsModule
   ],
   providers: [],
