@@ -1,0 +1,28 @@
+{
+  "layoutId": "ng-copilot-home",
+  "layout": {
+    "header": {
+      "title": "Home",
+      "icon": "home"
+    },
+    "body": {
+      "type": "container",
+      "children": [
+        {
+          "type": "text",
+          "text": "Welcome to Copilot!"
+        }
+      ]
+    },
+    "footer": {
+      "type": "container",
+      "children": [
+        {
+          "type": "button",
+          "text": "Next",
+          "action": "next"
+        }
+      ]
+    }
+  }
+}
