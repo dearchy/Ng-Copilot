@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './mat.moudle';
+import { LayoutEngineComponent } from './layout-engine/layout-engine.component';
 // import mat slide toogle module
 // import { MatSlideToggleModule } from '@angular/material/slide-toggle'; // Copilot spelling issue
 
@@ -13,7 +14,8 @@ import { SharedModule } from './mat.moudle';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LayoutEngineComponent
   ],
   imports: [
     BrowserModule,

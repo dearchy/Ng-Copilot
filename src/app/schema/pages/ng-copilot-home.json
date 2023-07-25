@@ -3,10 +3,10 @@
   "layout": {
     "header": {
       "title": "Home",
-      "icon": "home"
+      "icon": "home",
+      "component": ""
     },
     "body": {
-      "type": "container",
       "children": [
         {
           "type": "text",
@@ -15,7 +15,6 @@
       ]
     },
     "footer": {
-      "type": "container",
       "children": [
         {
           "type": "button",
