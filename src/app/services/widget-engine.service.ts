@@ -1,9 +1,13 @@
 // creat an angular service to handle the widget engine
 // ng g s home/services/widget-engine
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-import { Widget } from '../models/widget.model';
-import { WidgetType } from '../models/widget-type.model';
+import { Injectable, Type } from '@angular/core';
+import { MatIcon } from '@angular/material/icon';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import { MatCardHeader, MatCardContent, MatCardFooter } from '@angular/material/card';
+import { MatSlideToggle } from '@angular/material/slide-toggle';
+import { MatButton } from '@angular/material/button';
+import { MatCheckbox } from '@angular/material/checkbox';
+import { MatDivider } from '@angular/material/divider';
 
 // injectable decorator
 @Injectable({
@@ -12,7 +16,29 @@ import { WidgetType } from '../models/widget-type.model';
 export class WidgetEngineService {
   constructor() { }
   
-  // to create a function to load angular component dynamically
-
+  getComponentType(Name: string): Type<any> {
+    // return angular material  type based on  name
+    switch (Name) {
+      case 'mat-slide-toggle':
+        return MatSlideToggle;
+      case 'mat-button':
+        return MatButton;
+      case 'mat-checkbox':
+        return MatCheckbox;
+      case 'mat-icon':
+        return MatIcon;
+      case 'mat-progress-spinner':
+        return MatProgressSpinner;
+      case 'mat-card-header':
+        return MatCardHeader;
+      case 'mat-card-content':
+        return MatCardContent;
+      case 'mat-card-footer':
+        return MatCardFooter;
+      case 'mat-divider':
+        return MatDivider;
+      default:
+        return MatSlideToggle;
+  }
 }
-
+}

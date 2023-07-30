@@ -6,7 +6,7 @@ import { WidgetType } from '../models/widget-type.model';
 // injectable decorator
 
 // import static data from ng-copilot-home.json
-const data = require('../../assets/ng-copilot-home.json');
+const data = require('../schema/pages/ng-copilot-home.json');
 @Injectable({
   providedIn: 'root'
 })

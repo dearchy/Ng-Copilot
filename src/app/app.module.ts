@@ -6,16 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './mat.moudle';
-import { LayoutEngineComponent } from './layout-engine/layout-engine.component';
-// import mat slide toogle module
-// import { MatSlideToggleModule } from '@angular/material/slide-toggle'; // Copilot spelling issue
-
+import { LayoutEngineComponent } from './engine/layout-engine/layout-engine.component';
+import { WidgetEngineComponent } from './engine/widget-engine/widget-engine.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LayoutEngineComponent
+    LayoutEngineComponent,
+    WidgetEngineComponent
   ],
   imports: [
     BrowserModule,

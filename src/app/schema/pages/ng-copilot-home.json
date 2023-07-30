@@ -1,25 +1,66 @@
 {
-  "layoutId": "ng-copilot-home",
+  "id": "ng-copilot-home",
   "layout": {
     "header": {
-      "title": "Home",
-      "icon": "home",
-      "component": ""
+      "children": [
+        {
+          "class": "",
+          "component": "mat-slide-toggle",
+          "props": {
+            "text": "Home!"
+          }
+        }
+      ]
     },
     "body": {
       "children": [
         {
-          "type": "text",
-          "text": "Welcome to Copilot!"
+          "class": "",
+          "component": "mat-slide-toggle",
+          "props": {
+            "text": "Welcome to Copilot!"
+          }
+        },
+        {
+          "class": "",
+          "component": "mat-button",
+          "props": {
+            "color": "primary",
+            "variant": "raised",
+            "size": "large",
+            "icon": "home",
+            "iconPosition": "left",
+            "iconColor": "primary",
+            "iconSize": "large",
+            "iconVariant": "raised",
+            "iconText": "Welcome to Copilot!"
+          }
+        },
+        {
+          "class": "",
+          "component": "mat-divider",
+          "props": {
+            "text": "Welcome to Copilot!",
+            "color": "primary"
+          }
+        },
+        {
+          "class": "",
+          "component": "mat-slide-toggle",
+          "props": {
+            "text": "hello to Copilot!"
+          }
         }
       ]
     },
     "footer": {
       "children": [
         {
-          "type": "button",
-          "text": "Next",
-          "action": "next"
+          "class": "",
+          "component": "mat-slide-toggle",
+          "props": {
+            "text": "Footer here"
+          }
         }
       ]
     }
