@@ -70,5 +70,5 @@ import { NgModule } from '@angular/core';
     MatSlideToggleModule
   ]
 })
-export class SharedModule { }
+export class NcMatModule { }
 

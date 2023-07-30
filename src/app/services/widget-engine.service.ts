@@ -8,6 +8,7 @@ import { MatSlideToggle } from '@angular/material/slide-toggle';
 import { MatButton } from '@angular/material/button';
 import { MatCheckbox } from '@angular/material/checkbox';
 import { MatDivider } from '@angular/material/divider';
+import { NcCardComponent } from '../libs/nc-card/nc-card.component';
 
 // injectable decorator
 @Injectable({
@@ -37,6 +38,8 @@ export class WidgetEngineService {
         return MatCardFooter;
       case 'mat-divider':
         return MatDivider;
+      case 'app-nc-card':
+        return NcCardComponent;
       default:
         return MatSlideToggle;
   }

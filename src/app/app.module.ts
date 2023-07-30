@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
-import { SharedModule } from './mat.moudle';
+import { NcMatModule } from './mat.moudle';
 import { LayoutEngineComponent } from './engine/layout-engine/layout-engine.component';
 import { WidgetEngineComponent } from './engine/widget-engine/widget-engine.component';
+import { LibModule } from './libs/lib.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { WidgetEngineComponent } from './engine/widget-engine/widget-engine.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule,
+    NcMatModule,
+    LibModule,
     BrowserAnimationsModule
   ],
   providers: [],

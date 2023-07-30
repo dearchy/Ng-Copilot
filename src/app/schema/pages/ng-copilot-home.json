@@ -50,6 +50,13 @@
           "props": {
             "text": "hello to Copilot!"
           }
+        },
+        {
+          "class": "",
+          "component": "app-nc-card",
+          "props": {
+            "text": "hello to Copilot!"
+          }
         }
       ]
     },
