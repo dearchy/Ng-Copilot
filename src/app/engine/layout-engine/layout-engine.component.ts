@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MetadataService } from '../../services/metadata.service';
 import { Layout } from '../../models/layout.modle';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-layout-engine',
@@ -14,10 +15,17 @@ export class LayoutEngineComponent implements OnInit {
   public layoutId: string = 'layout-1';
 
   constructor(
-    private metadataService: MetadataService
+    private metadataService: MetadataService,
+    private route: ActivatedRoute,
   ) { 
-    this.pageName = 'ng-copilot-home';
-    this.metadataService.getMetadata().subscribe((data: any) => {
+    // get this page name from router path
+    console.log('this.route', this.route)
+    const path = this.route.snapshot.routeConfig?.path
+     || 'home';
+    // this page name should be `ng-copilot-` with path
+    this.pageName = `ng-copilot-${path}`;
+    console.log('this.pageName', this.pageName)
+    this.metadataService.getMetadata(this.pageName).subscribe((data: any) => {
       this.config = data?.layout;
       this.layoutId = data?.id;
       });
